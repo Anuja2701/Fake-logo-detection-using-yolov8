@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Logo Detection</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 50px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            margin: 10px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 75%;
+            /* 4:3 aspect ratio */
+        }
+
+        .video-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Fake Logo Detection</h1>
+        <div class="btn-group" role="group" aria-label="Detection controls">
+            <button class="btn btn-primary" onclick="startDetection()">Start Detection</button>
+            <button class="btn btn-danger" onclick="stopDetection()">Stop Detection</button>
+        </div>
+        <div class="video-container">
+            <!-- Placeholder image before the video feed starts -->
+            <img id="video" src="Blush_Pink_Vintage_Spring_Floral_Stamp_Quote_Instagram_Post.jpg" alt="Video feed">
+        </div>
+    </div>
+
+    <script>
+        function startDetection() {
+            document.getElementById('video').src = "/video_feed";
+        }
+
+        function stopDetection() {
+            document.getElementById('video').src = "Blush_Pink_Vintage_Spring_Floral_Stamp_Quote_Instagram_Post.jpg";
+        }
+    </script>
+</body>
+
+</html>
