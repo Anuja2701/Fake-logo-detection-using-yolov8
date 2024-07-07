@@ -1,0 +1,46 @@
+path: C:/yolo/data
+train: C:/yolo/data/train/images  # train images (relative to 'path')
+val: C:/yolo/data/val/images  # val images (relative to 'path')
+
+nc: 40
+names:
+  0: Real youtube logo
+  1: Fake youtube logo
+  2: Real zara logo
+  3: Fake zara logo
+  4: Real adidas logo
+  5: Fake adidas logo 
+  6: Real amazon logo
+  7: Fake amazon logo
+  8: Real apple logo
+  9: Fake apple logo
+  10: Real ariel logo
+  11: Fake ariel logo
+  12: Real cocacola logo
+  13: Fake cocacola logo
+  14: Real google logo
+  15: Fake google logo
+  16: Real lays logo
+  17: Fake lays logo
+  18: Real levis logo
+  19: Fake levis logo
+  20: Real lg logo
+  21: Fake lg logo
+  22: Real marvel logo
+  23: Fake marvel logo
+  24: Real mcdonalds logo
+  25: Fake mcdonalds logo
+  26: Real microsoft logo
+  27: Fake microsoft logo
+  28: Real nasa logo
+  29: Fake nasa logo
+  30: Real nescafe logo
+  31: Fake nescafe logo
+  32: Real nestle logo
+  33: Fake nestle logo
+  34: Real nike logo
+  35: Fake nike logo
+  36: Real starbucks logo
+  37: Fake starbucks logo
+  38: Real oreo logo
+  39: Fake oreo logo
